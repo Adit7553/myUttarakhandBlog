@@ -34,12 +34,33 @@
 
                   <br> <div class="lform">
                        <h2>Login here</h2>
-                       <input type="email" name="email" placeholder="Enter your emaid id"/>
+                       <input class="em" type="email" placeholder="Enter your emaid id"/>
                        <input type="password" name="password" placeholder="Enter your password"/>
                        <button class="btn2"><a href="#">Login</a></button>
 
                        <p class="link">Don't have an account ?<br/>
                        <a href="#">Sign up</a> here</p>
+                       <h4 class="DandT">Your login Time and Date :<br><p id="demoT"></p></h4>
+                       <script>
+                       let timeAndDate = new Date();
+                        document.getElementById("demoT").innerHTML = timeAndDate;
+                        </script>
+                        <script>
+                            $(document).ready(function(){
+                               $(".cn").click(function(){
+                                   $("span").text("Welcome to");
+                               });
+                               $(".logo").mouseover(function(){
+                                   $(this).html("Heaven on earth");
+
+                               });
+                               $(".btn").click(function(){
+                                   $(".srch").val("created by adibawa");
+
+                               });
+
+                            });
+                        </script>
 
                    </div>
             </div>
